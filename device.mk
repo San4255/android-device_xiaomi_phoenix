@@ -478,6 +478,18 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service
 
+# Shim
+PRODUCT_PACKAGES += \
+    libwatermark_shim
+
+# System
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.sys.binary_xml=false
+
+# Soter
+PRODUCT_PACKAGES += \
+    libhwbinder.vendor
+
 # Telephony
 PRODUCT_PACKAGES += \
     ims-ext-common \
