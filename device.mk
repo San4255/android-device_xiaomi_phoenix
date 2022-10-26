@@ -41,6 +41,10 @@ PRODUCT_COPY_FILES += \
  #   android.hardware.atrace@1.0-service \
   #  android.hardware.atrace@1.0.vendor
 
+ # Call recording
+   PRODUCT_PACKAGES += \
+    com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@6.0-impl \
